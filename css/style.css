@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Montserrat:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+:root{
+    --commen-btn-color: #6346F9;
+    --text-color: #646464;
+    --properties-color: #F2F2F2;
+}
+*{
+    font-family: "Josefin Sans";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.section-padding{
+    margin-top: 6rem;
+}
+
+/* Start Header */
+
+.navbar-brand , .navbar-brand span{
+    /* font-family: "rosmi"; */
+    font-size: 31px;
+    font-weight: normal;
+    color: #363636;
+}
+
+.navbar-brand span{
+    color: var(--commen-btn-color);
+}
+
+.navbar-nav {
+    font-size: 19px;
+    font-weight: bold;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.custom-btn{
+    background-color: var(--commen-btn-color);
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.btn:hover ,{
+    background-color: var(--commen-btn-color) ;
+}
+
+.custom-nav-style{
+    padding: 0px 20px !important
+}
+
+.collapse .navbar-nav{
+    align-items: center;
+}
+
+/* End Header */
+
+
+.home{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(/img/Home.jpeg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(0, 0, 0 , 0.51);
+}
+
+.home-title{
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.home-text {
+    position: relative;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.info-box{
+    position: relative;
+}
+
+.lead{
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--text-color);
+    
+}
+.lead>span , .card-title{
+    font-weight: 700;
+    color: #434343;
+}
+
+.custom-col-style{
+    border-right: 5px solid var(--commen-btn-color) ;
+}
+
+.brands>ul{
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: 20px;
+}
+.brands>ul::-webkit-scrollbar {
+    display: none;
+  }
+.brands>ul>li{
+    width: 100px;
+    margin-right: 50px;
+}
+
+
+
+/* ------ Property Section ------ */
+
+    .property-title{
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .card-title{
+        margin-bottom: 2rem !important;
+    }
+
+    .price{
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--commen-btn-color);
+        margin: 0;
+    }
+
+    .custom-btn-style{
+        background-color: var(--properties-color);
+        border: none;
+        color: #000000;
+        width: 50%;
+    }
+
+    .custom-btn-style:hover{
+        background-color: var(--commen-btn-color );
+        color: #FFFFFF !important;
+    }
+
+    .custom-property-card{
+        border: none;
+        background: white;
+        text-align: left;
+        padding-bottom: 3rem;
+    }
+
+    .custom-price-style{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    /* ---------- Agents Section ---------- */
+
+
+    .agents{
+        background-color: #F7F6FB;
+    }
+    .custom-card-style{
+        background-color: #F7F6FB;
+        border: none;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .agents-title{
+        font-size: 30;
+        font-weight: bold;
+        color: #1D1D1D;
+        margin-top: 4rem;
+    }
+
+
+    /* ---------- About Section ---------- */
+
+
+    .about-title{
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+
+    /* ---------- Rateing Section ---------- */
+
+    .rateing-card{
+        background: white;
+        border: none;
+        filter: drop-shadow(0px 50px 49.5px rgba(31,72,93,0.1 ));
+        margin-bottom: 50px;
+    }
+
+    .rateing-card:hover{
+        filter: drop-shadow(0px 100px 49.5px rgba(31,72,93,0.2 ));
+    }
+
+    .rateing-title{
+        font-size: 65px;
+        margin-top: 6rem;
+    }
+
+    .star-rateing{
+        display: flex;
+        padding: 1.5rem;
+    }
+
+  
+    .checked{
+        margin-right: 4px;
+        color: orange;
+        margin-bottom: 10px;
+    } 
+
+    .rateing-text{
+        font-size: 16px;
+        font-weight: normal;
+        color: #9AAABF;
+    }
+
+    .rating-avatar{
+        display: flex;
+        align-items: center;
+    }
+
+    .rating-avatar>img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .rating-avatar-name>p{
+
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 26px;
+        font-style: normal;
+        text-align: left;
+        color: #1e1c24;
+    }
+
+    .rating-avatar-name>span{
+
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+        font-style: normal;
+        text-align: left;
+        color: #b1aaaa;
+
+    }
+
+
+
+
+    /* ------Footer------ */
+
+    footer{
+        background: url(/img/footer.jpeg);
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: end;
+        
+    }
+
+    .custom-title-style , .custom-title-style>span{
+        font-size: 48px;
+    }
+
+    footer>.footer{
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .end-text{
+        color: #DBE1DB;
+        font-weight: 300;
+    }
+
+    .social-icons{
+        display: flex;
+        list-style: none;
+    }
+
+    .social-icons a{
+        text-decoration: none ;
+        padding: 7px 11px;
+        border-radius: 50%;
+        background: #ff000000;
+        border: 2px solid #fff;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    .social-icons a:hover{
+        background-color: var(--commen-btn-color);
+        filter: drop-shadow(0px 3px 3.5px rgba(35,84,243,0.37 ));
+        color: #FFFFFF;
+        border: 2px solid var(--commen-btn-color);
+    }
+
